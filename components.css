@@ -1,10 +1,106 @@
 body {
   font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
-.user-suggestions {
+.menu {
   display: flex;
   align-items: center;
-  border: 1px solid #ccc;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  height: 90px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+.link-menu .icon-instagram {
+  background-image:url(https://www.instagram.com/static/bundles/es6/sprite_glyphs_b1c882bed79e.png/b1c882bed79e.png);
+  background-repeat: no-repeat;
+  background-position: -257px -200px;
+  height: 24px;
+  width: 24px;
+}
+.link-menu .straight {
+  background-color: #262626;
+  height: 28px;
+  width: 1px;
+  margin-left: 40px;
+  margin-top: -25px;
+}
+.link-menu .instagram-image {
+  background-image:url(https://www.instagram.com/static/bundles/es6/sprite_glyphs_b1c882bed79e.png/b1c882bed79e.png);
+  background-repeat: no-repeat;
+  background-position: -74px -200px;
+  height: 29px;
+  width: 103px;
+  margin-left: 60px;
+  margin-top: -25px;
+}
+a:hover .link-menu {
+  background-color: red;
+}
+.link-menu {
+  flex-grow: 1;
+  padding-left: 100px;
+}
+.search input {
+  text-align: center;
+  height: 25px;
+  width: 200px;
+}
+.search {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+.icon-team .compass {
+  background-image:url(https://www.instagram.com/static/bundles/es6/sprite_glyphs_b1c882bed79e.png/b1c882bed79e.png);
+  background-repeat: no-repeat;
+  background-position: -74px -231px;
+  height: 24px;
+  width: 24px;
+  margin-right: 30px;
+}
+.icon-team .heart {
+  background-image:url(https://www.instagram.com/static/bundles/es6/sprite_glyphs_b1c882bed79e.png/b1c882bed79e.png);
+  background-repeat: no-repeat;
+  background-position: -104px -300px;
+  height: 24px;
+  width: 24px;
+  margin-right: 30px;
+}
+.icon-team .user {
+  background-image:url(https://www.instagram.com/static/bundles/es6/sprite_glyphs_b1c882bed79e.png/b1c882bed79e.png);
+  background-repeat: no-repeat;
+  background-position: -234px -274px;
+  height: 24px;
+  width: 24px;
+  margin-left: 0px;
+}
+.icon-team {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  padding-right: 130px;   
+}
+/*----------------------------------------------------------*/
+.text {
+  padding: 50px  0px 10px 300px;
+}
+.border {
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: auto;
+  position: relative;
+  left: 300px;
+}
+.user-suggestions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 6px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 .image {
   width: 44px;
@@ -22,6 +118,18 @@ body {
 .info .nick-name {
   font-size: 14px;
   font-weight: 600;
+}
+.info a:link {
+  text-decoration: none;
+  color: black;
+}
+.info a:hover {
+  text-decoration: none;
+  color: black;
+}
+.info a:visited {
+  text-decoration: none;
+  color: black;
 }
 .icon {
   height: 12px;
@@ -42,7 +150,7 @@ body {
   color: rgb(153, 153, 153);
 }
 .button {
-  padding: 0px 8px;
+  padding-right: 15px;
 }
 .button input {
   background-color: #3897f0;
